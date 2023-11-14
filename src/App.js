@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Hello />
+      <Hello title = 'hogehoge'/>
       <header className="App-header">
         <Weather />
       </header>

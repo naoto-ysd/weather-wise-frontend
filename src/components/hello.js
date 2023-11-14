@@ -1,7 +1,16 @@
 import React from 'react';
 
-function Hello() {
-    return <h1>Hello, React!</h1>
+function Hello(props) {
+    return (
+        <>
+        <h1>
+            Hello, React!
+        </h1>
+        <div>
+            {props.title}
+        </div>
+        </> 
+    )
 }
 
 export default Hello;
