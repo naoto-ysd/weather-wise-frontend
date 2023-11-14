@@ -1,6 +1,10 @@
 import React from 'react';
 
 function Hello(props) {
+    let temp = () => {
+        return <div>fuga</div>
+    }
+
     return (
         <>
         <h1>
@@ -8,6 +12,9 @@ function Hello(props) {
         </h1>
         <div>
             {props.title}
+        </div>
+        <div>
+            {temp()}
         </div>
         </> 
     )
