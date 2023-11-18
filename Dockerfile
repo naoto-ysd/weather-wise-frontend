@@ -1,7 +1,8 @@
 # build environment
-FROM node:14 AS builder
+FROM node:21-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN npm install
 COPY . ./
 RUN npm run build
