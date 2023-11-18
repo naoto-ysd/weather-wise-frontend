@@ -1,22 +1,22 @@
 import React from 'react';
 
-function Hello(props) {
-    let temp = () => {
-        return <div>fuga</div>
-    }
+const Hello = (props) => {
+	let temp = () => {
+			return <div>fuga</div>
+	}
 
     return (
-        <>
-        <h1>
-            Hello, React!
-        </h1>
-        <div>
-            {props.title}
-        </div>
-        <div>
-            {temp()}
-        </div>
-        </> 
+			<>
+			<h1>
+					Hello, React!
+			</h1>
+			<div>
+					{props.title}
+			</div>
+			<div>
+					{temp()}
+			</div>
+			</>
     )
 }
 
