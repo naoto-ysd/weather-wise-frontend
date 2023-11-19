@@ -1,11 +1,6 @@
 // display local temperarture and description
 import React, { useState, useEffect } from 'react';
-// import Tempareture from './components/tempareture';
-import Tempareture from './tempareture';
-
-function roundToOneDecimalPlaces(temp) {
-	return Math.round(temp * 10) / 10;
-}
+import {Tempareture} from './index';
 
 export default function Weather() {
 	const [weather, setWeather] = useState(null);
@@ -28,9 +23,7 @@ export default function Weather() {
 
 	return (
 	<div>
-		<h2><Tempareture/></h2>
-		<p>Temperature: {roundToOneDecimalPlaces(weather.main.temp - 273.15)}°C</p> 
-		{/* <p>Temperature: {weather.main.temp - 273.15}°C</p> convert from kelvin to celsius */}
+		<h2><Tempareture tempareture = {weather.main.temp} /></h2>
 		<p>Condition: {weather.weather[0].description}</p>
 	</div>
 	);
