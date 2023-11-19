@@ -1,11 +1,13 @@
 version: '3'
 services:
-  web:
-    build: .
+  front:
+    build: 
+      context: .
+      target: ${BUILD_TARGET}
     volumes:
       - .:/app
       - /app/node_modules
     ports:
-      - "8080:80"
+      - "${PORT_MAPPING}"
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=${NODE_ENV}

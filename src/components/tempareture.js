@@ -1,14 +1,15 @@
 import React from "react";
 
-function roundToOneDecimalPlaces(temp) {
-	return Math.round(temp * 10) / 10;
+function roundToOneDecimalPlaces(temperature) {
+  console.log(temperature)
+	return Math.round(temperature * 10) / 10;
 }
 
-const Tempareture = (tempareture) => {
+const Tempareture = (props) => {
   const FAHRENHEIT = 273.15 // variable used to convert from fahrenheit to celsius 
   return(
   <div>
-    <p>Temperatureaaa: {roundToOneDecimalPlaces(tempareture - FAHRENHEIT)}°C</p> 
+    <p>Temperature: {roundToOneDecimalPlaces(props.tempareture.main.temp - FAHRENHEIT)}°C</p>
   </div>
   );
 }

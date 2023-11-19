@@ -12,6 +12,7 @@ export default function Weather() {
 			.then(response => response.json())
 			.then(data => {
 				setWeather(data);
+				console.log(process.env.REACT_APP_OPEN_WEATHER_MAP_API_KEY);
 			})
 			.catch(error => {
 				console.error("Error fetching weather data:", error);
@@ -23,7 +24,8 @@ export default function Weather() {
 
 	return (
 	<div>
-		<h2><Tempareture tempareture = {weather.main.temp} /></h2>
+		<h2><Tempareture tempareture = {weather} /></h2>
+		{/* <p>Temperature: {weather.main.temp}°C</p>  */}
 		<p>Condition: {weather.weather[0].description}</p>
 	</div>
 	);
