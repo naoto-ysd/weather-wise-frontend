@@ -28,7 +28,7 @@ export default function Weather() {
 
 	return (
 	<div>
-		{/* <h2><Tempareture weather = {weather}/></h2> */}
+		<h2><Tempareture/></h2>
 		<p>Temperature: {roundToOneDecimalPlaces(weather.main.temp - 273.15)}°C</p> 
 		{/* <p>Temperature: {weather.main.temp - 273.15}°C</p> convert from kelvin to celsius */}
 		<p>Condition: {weather.weather[0].description}</p>

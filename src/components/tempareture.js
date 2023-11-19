@@ -1,8 +1,9 @@
 import React from "react";
-function Tempareture(weather) {
+
+const Tempareture = (weather) => {
   return(
   <h2>
-    {weather.main}
+    plan to show temperature here dynamically
   </h2>
   );
 }

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Hello title = { 'hogehoge' }/>
+      <Hello title = { 'hogehogeあああ' }/>
       <Hello title = { 'fugafuga' }/>
       <header className="App-header">
         <Weather />
