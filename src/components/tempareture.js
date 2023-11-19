@@ -7,14 +7,9 @@ function roundToOneDecimalPlaces(temp) {
 const Tempareture = (tempareture) => {
   const FAHRENHEIT = 273.15 // variable used to convert from fahrenheit to celsius 
   return(
-  <>
-  <h2>
-    plan to show temperature here dynamically
-  </h2>
   <div>
-    <p>Temperature: {roundToOneDecimalPlaces(tempareture - FAHRENHEIT)}°C</p> 
+    <p>Temperatureaaa: {roundToOneDecimalPlaces(tempareture - FAHRENHEIT)}°C</p> 
   </div>
-  </>
   );
 }
 
