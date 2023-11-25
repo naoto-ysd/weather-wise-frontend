@@ -25,7 +25,6 @@ export default function Weather() {
 	return (
 	<div>
 		<h2><Tempareture tempareture = {weather} /></h2>
-		{/* <p>Temperature: {weather.main.temp}°C</p>  */}
 		<p>Condition: {weather.weather[0].description}</p>
 	</div>
 	);

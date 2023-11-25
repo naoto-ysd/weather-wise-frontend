@@ -3,7 +3,7 @@ services:
   front:
     build: 
       context: .
-      target: ${BUILD_TARGET}
+      target: dev
     volumes:
       - .:/app
       - /app/node_modules
