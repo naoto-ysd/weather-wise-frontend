@@ -12,7 +12,6 @@ export default function Weather() {
 			.then(response => response.json())
 			.then(data => {
 				setWeather(data);
-				console.log(process.env.REACT_APP_OPEN_WEATHER_MAP_API_KEY);
 			})
 			.catch(error => {
 				console.error("Error fetching weather data:", error);
