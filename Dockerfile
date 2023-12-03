@@ -9,6 +9,8 @@ CMD ["npm", "start"]
 
 # build stage
 FROM dev AS build
+ARG OPEN_WEATHER_MAP_API_KEY
+ENV REACT_APP_OPEN_WEATHER_MAP_API_KEY=$OPEN_WEATHER_MAP_API_KEY
 RUN npm run build
 
 # production stage
