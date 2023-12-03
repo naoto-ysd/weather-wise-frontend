@@ -1,7 +1,6 @@
 import React from "react";
 
 function roundToOneDecimalPlaces(temperature) {
-  console.log(temperature)
 	return Math.round(temperature * 10) / 10;
 }
 

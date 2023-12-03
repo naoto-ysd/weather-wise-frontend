@@ -6,7 +6,6 @@ import './App.css';
 
 function App() {
   let titles = ['hogehoge','fugafuga']
-  titles.forEach(title => { console.log(title) })
 
   return (
     <div className="App">
